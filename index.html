@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random CV Generator</title>
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <!--BOX ICONS-->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header__wrapper app__wrapper">
+            <div class="img__container">
+                <img id="profile" src="" alt="profile-picture">
+            </div>
+            <div class="headings__wrapper">
+                <h1 class="head"></h1>
+                <h2>WEB DEVELOPER</h2>
+            </div>
+        </div>
+        <box-icon class="menu__icon" color="#f1f1f1" animation="tada" size="cssSize" name='menu-alt-right'></box-icon>
+    </header>
+
+    <main>
+        <section class="section__wrapper app__wrapper" id="perfil">
+            <h3 class="head">PERFIL</h3>
+            <p class="p-text">
+                Hola! Mi nombre es <span class="name"><em>cargando...</em></span> y soy Front-end Developer. Me apasiona el diseño de interfaces de usuario en aplicaciones web. Hace 4 años era estudiante de Ingeniería Química en la Universidad Nacional del Comahue, pero decidí dar un cambio radical en mi vida, salir de mi zona de confort y estudiar de manera auto-didacta HTML y CSS. 
+                Al día de hoy cuento con 4 años de experiencia y  he trabajado en empresas como Rappi y Oxxo. Soy una persona proactiva, empática y sé como trabajar en equipo.
+            </p>
+            <p>Este perfil está creado de manera aleatoria. Recarga la página para obtener el perfil de una nueva persona.</p>
+        </section>
+        
+        <section class="section__wrapper app__wrapper" id="skills">
+            <h3 class="head">SKILLS</h3>
+            <div class="skills-img__container">
+                <img src="./assets/img/html.png" alt="html5">
+                <img src="./assets/img/css.png" alt="css3">
+                <img src="./assets/img/javascript.png" alt="javascript">
+                <img src="./assets/img/node.png" alt="node-js">
+                <img src="./assets/img/react.png" alt="react-js">
+                <img src="./assets/img/redux.png" alt="redux">
+                <img src="./assets/img/git.png" alt="git">
+                <img src="./assets/img/sass.png" alt="sass">
+                <img src="./assets/img/graphql.png" alt="graphql">
+            </div>
+            <div>
+                <h3 class="head">WORKS</h3>
+                <div class="works">
+                    <article>
+                        <div class="works-img__container">
+                            <img src="./assets/img/screenshot1.png" alt="VR site">
+                        </div>
+                        <h4 class="secondary-head">VR Site</h4>
+    
+                    </article>
+                    <article>
+                        <div class="works-img__container">
+                            <img src="./assets/img/screenshot2.png" alt="my-linktree">
+                        </div>
+                        <h4 class="secondary-head">Food Truck Website</h4>
+    
+                    </article>
+                    <article>
+                        <div class="works-img__container">
+                            <img src="./assets/img/screenshot3.png" alt="E-commerce-site">
+                            <h4 class="secondary-head">E-commerce site</h4>
+    
+                        </div>
+                    </article>
+                    <article>
+                        <div class="works-img__container">
+                            <img src="./assets/img/screenshot4.png" alt="carwash-website">
+                            <h4 class="secondary-head">Car Wash site</h4>
+    
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__wrapper app__wrapper" id="experiencia">
+            <h3 class="head">EXPERIENCE</h3>
+            <div class=" app__wrapper experience__container">
+                <div class="experience-img__container">
+                    <img src="./assets/img/coding_guy.jpg" alt="">
+                </div>
+                <ul class="experience__list">
+                    <li>
+                        <span>2023</span>
+                        <p class="p-text"> Desarrollador Front-end en Rappi</p>
+                    </li>
+                    <li>
+                        <span>2022</span>
+                        <p class="p-text"> Desarrollador Front-end en OXXO</p>
+                    </li>
+                    <li>
+                        <span>2021</span>
+                        <p class="p-text"> Desarrollador Front-end freelance</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section__wrapper app__wrapper" id="contacto">
+            <div class="contact">
+                <h3 class="head">CONTACT</h3>
+            <ul class="app__wrapper">
+                <li>
+                    <span >Phone</span>
+                    <p class="p-text" id="contact-phone"><em>Cargando...</em></p>
+
+                </li>
+                <li>
+                    <span>Mail</span>
+                    <p class="p-text" id="contact-mail"><em>Cargando...</em></p>
+
+                </li>
+                <li>
+                    <span>Location</span>
+                    <p class="p-text" id="contact-location"><em>Cargando...</em></p>
+
+                </li>
+            </ul>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="p-text">
+            <span id="footer-name"><em>cargando...</em></span>
+            - 2023 - All rights reserved ©
+        </p>
+    </footer>
+    <div class="modal" id="modal"></div>
+    <script src="./assets/scripts/app.js" defer></script>
+</body>
+</html>

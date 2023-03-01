@@ -1,0 +1,250 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --dark: #121212;
+  --dark--lighter: #292929;
+  --grey: #989898;
+  --white: #f1f1f1;
+  --blue: #4e68ec;
+  --red: #c90a0a;
+  --sm: 1.2rem;
+  --md: 1.6rem;
+  --l: 2.4rem;
+  --xl: 3.2rem;
+  --xxl: 4rem;
+  --bar_height: 9rem;
+  --logo_height: 7rem;
+  --scales: 1.1;
+  --transitions: all 0.8s ease;
+}
+
+/*CONTAINERS*/
+.app__wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: var(--sm);
+  gap: var(--md);
+}
+
+.head {
+  font-size: var(--xl);
+  font-weight: 400;
+}
+.head span {
+  font-weight: 700;
+}
+
+.secondary-head {
+  font-size: var(--md);
+  font-weight: 600;
+}
+
+.p-text {
+  font-size: var(--md);
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  background-color: var(--dark--lighter);
+}
+header .header__wrapper {
+  flex-direction: column;
+}
+header .header__wrapper .img__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--grey);
+  border-radius: 50%;
+}
+header .header__wrapper .img__container img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .header__wrapper .headings__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header .header__wrapper .headings__wrapper h2 {
+  background-color: var(--blue);
+  font-weight: 400;
+  width: 60%;
+  text-align: right;
+}
+@media screen and (min-width: 1000px) {
+  header .header__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/*MENU BUTTON*/
+.menu__icon {
+  width: 4.5rem;
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  z-index: 100;
+}
+
+/*SECTION*/
+.section__wrapper {
+  flex-direction: column;
+}
+.section__wrapper h3 {
+  font-weight: 800;
+}
+
+.modal.show {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--dark);
+}
+
+nav {
+  height: 100%;
+}
+nav .nav__links {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+nav .nav__links li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav .nav__links li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--xl);
+}
+nav .nav__links li a:hover {
+  border-bottom: 3px solid var(--blue);
+}
+
+/*SKILLS & WORK*/
+.skills-img__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+.skills-img__container img {
+  width: 10rem;
+  margin: auto;
+}
+.skills-img__container img:hover {
+  scale: var(--scales);
+  transition: var(--transitions);
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  gap: var(--md);
+}
+.works article {
+  padding: var(--sm) var(--md);
+  background-color: var(--dark--lighter);
+  border-radius: var(--md);
+}
+.works article:hover {
+  scale: var(--scales);
+  transition: var(--transitions);
+}
+.works article .works-img__container img {
+  width: 100%;
+  border-radius: var(--sm);
+}
+
+/*EXPERIENCE*/
+.experience__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--l);
+}
+
+.experience-img__container {
+  width: 40%;
+  display: flex;
+  flex-basis: 200px;
+}
+.experience-img__container img {
+  width: 100%;
+  border-radius: 50%;
+  transition: var(--transitions);
+}
+.experience-img__container img:hover {
+  scale: var(--scales);
+  transition: var(--transitions);
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--l);
+  width: 50%;
+}
+.experience__list span {
+  font-size: var(--md);
+  font-weight: 600;
+}
+@media screen and (max-width: 640px) {
+  .experience__list {
+    width: 80%;
+    align-items: flex-start;
+  }
+}
+
+/*CONTACT*/
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+.contact ul li span {
+  font-size: var(--md);
+  font-weight: 600;
+}
+
+/*FOOTER*/
+footer {
+  height: var(--bar_height);
+  background-color: var(--dark--lighter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
